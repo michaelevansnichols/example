@@ -1,14 +1,16 @@
 ---
 home: true
-heroImage: /hero.png
-features:
-- title: Mike's Simple First
-  details: Minimal setup with markdown-centered project structure helps you focus on writing.
-- title: Vue-Powered
-  details: Enjoy the dev experience of Vue + webpack, use Vue components in markdown, and develop custom themes with Vue.
-- title: Performant
-  details: VuePress generates pre-rendered static HTML for each page, and runs as an SPA once a page is loaded.
 footer: MIT Licensed | Copyright © 2018-present
+layout: Layout
 ---
 
-Well, let's see if this works.  And it looks like it does.  Well locally at least...
+<hero>
+    <img :src="$withBase('/hero.png')" alt="GitLab + VuePress">
+</hero>
+
+# Mike's GitLab Pages test using VuePress
+## Looks like it works :)
+
+### But what about vue components...do they still work?
+
+[Let's find out](/comptest.html)
