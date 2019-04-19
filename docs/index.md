@@ -11,7 +11,6 @@ layout: Layout
 # Mike's GitLab Pages test using VuePress
 ## Looks like it works :)
 
-Branch?
 
 ### But what about vue components...do they still work?
 

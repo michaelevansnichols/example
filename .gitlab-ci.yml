@@ -1,8 +1,12 @@
 image: node:latest
 
 stages:
+  - test
   - deploy
   - performance
+
+include:
+  - template: Code-Quality.gitlab-ci.yml
 
 pages:
   stage: deploy
