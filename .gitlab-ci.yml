@@ -39,6 +39,8 @@ performance:
       - sitespeed-results/
     reports:
       performance: performance.json
+  only:
+    - tags
 
 
 
