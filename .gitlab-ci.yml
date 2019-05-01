@@ -8,6 +8,14 @@ stages:
 include:
   - template: Code-Quality.gitlab-ci.yml
 
+test_variable:
+  stage: test
+  script:
+    - echo neither is $neither
+    - echo masked is $masked
+    - echo protected is $protected
+    - echo both is $both
+
 pages:
   stage: deploy
   cache:
