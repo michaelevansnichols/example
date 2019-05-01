@@ -8,6 +8,11 @@ stages:
 include:
   - template: Code-Quality.gitlab-ci.yml
 
+test_variable:
+  stage: test
+  script:
+    - echo $protected # calls a custom variable
+
 pages:
   stage: deploy
   cache:
