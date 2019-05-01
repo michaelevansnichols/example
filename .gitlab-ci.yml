@@ -11,7 +11,10 @@ include:
 test_variable:
   stage: test
   script:
-    - echo $protected # calls a custom variable
+    - echo neither is $neither
+    - echo masked is $masked
+    - echo protected is $protected
+    - echo both is $both
 
 pages:
   stage: deploy
