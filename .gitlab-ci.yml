@@ -10,6 +10,8 @@ include:
 
 test_variable:
   stage: test
+  environment:
+    name: testing
   script:
     - echo neither is $neither
     - echo masked is $masked
