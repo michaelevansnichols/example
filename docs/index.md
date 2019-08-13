@@ -8,7 +8,7 @@ layout: Layout
     <img :src="$withBase('/hero.png')" alt="GitLab + VuePress">
 </hero>
 
-# Mike's GitLab Pages test using VuePress
+# Mike's GitLab Pages test using VuePress.
 ## Looks like it works :)
 
 
