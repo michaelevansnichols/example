@@ -11,7 +11,7 @@ include:
 test_variable:
   stage: test
   environment:
-    name: testing
+    name: test
   script:
     - echo neither is $neither
     - echo masked is $masked
