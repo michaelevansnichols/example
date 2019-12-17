@@ -2,6 +2,7 @@ image: node:latest
 
 stages:
   - test
+  - code_quality
   - deploy_review
   - deploy
   - performance
@@ -18,7 +19,13 @@ test_variable:
     - echo masked is $masked
     - echo protected is $protected
     - echo both is $both
-
+code_quality:
+    stage: test
+    only:
+        variables:
+        - $quality == "yes"
+    
+    
 pages:
   stage: deploy
   cache:
