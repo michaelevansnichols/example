@@ -31,14 +31,13 @@ pages:
   cache:
     paths:
     - node_modules/
-
   script:
   - yarn install
   - yarn run build
 
   artifacts:
     paths:
-    - public/$CI_COMMIT_REF_NAME
+    - public
   only:
   - master
   
