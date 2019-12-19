@@ -38,24 +38,10 @@ pages:
 
   artifacts:
     paths:
-    - public
-
+    - public/$CI_COMMIT_REF_NAME
   only:
   - master
   
-deploy_review:
-  stage: deploy
-  script:
-    - yarn install
-    - yarn run build
-  environment:
-    name: review/$CI_COMMIT_REF_NAME
-    url: http://$CI_ENVIRONMENT_SLUG.$KUBE_INGRESS_BASE_DOMAIN
-  only:
-    - branches
-  except:
-    - master
-
 performance:
   stage: performance
   image: docker:git
