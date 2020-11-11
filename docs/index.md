@@ -12,6 +12,6 @@ layout: Layout
 ## Looks like it works :)
 
 
-### But what about vue components...do they still work?
+### But what about vue components...do they still work??
 
 [Let's find out](/comptest.html)

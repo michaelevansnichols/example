@@ -8,7 +8,7 @@
 <style scoped>
 .hello{
     width: 30%;
-    margin: 24px auto 24px auto;
+    margin: 24px auto 25px auto;
 }
 
 
